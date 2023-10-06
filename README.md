@@ -19,5 +19,5 @@ Run ```$ npm install``` in the MEANunderBoard folder
 ### Angular CLI
 ```$ ng serve --open```
 
-Run ````$ npm start```
+Run ```$ npm start```
 (nodemon is used to update any changes on the server if modified)
