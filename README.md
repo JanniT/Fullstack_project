@@ -4,8 +4,8 @@ This is a project work for a Fullstack course of my studies. It's a MEAN stack a
 
 ## Prerequisites
 - Angular CLI: ```$ npm i -g @angular(cli)```.
-- node.js and npm, download from this [link] (https://nodejs.org/en/download).
-- MongoDB, download from this [link] (https://www.mongodb.com/try/download/community).
+- node.js and npm, download from this [link](https://nodejs.org/en/download).
+- MongoDB, download from this [link](https://www.mongodb.com/try/download/community).
     - Also the mongoDB shell is pretty usefull
 
 ## To install dependencies
