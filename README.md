@@ -9,7 +9,7 @@ This is a project work for a Fullstack course of my studies. It's a MEAN stack a
     - Also the mongoDB shell is pretty usefull
 
 ## To install dependencies
-Run ````$ npm install``` in the MEANunderBoard folder
+Run ```$ npm install``` in the MEANunderBoard folder
 
 ## How to run the app
 
