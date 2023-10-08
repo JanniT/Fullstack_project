@@ -8,17 +8,19 @@ This is a project work for a Fullstack course of my studies. It's a MEAN stack a
 - MongoDB, download from this [link](https://www.mongodb.com/try/download/community).
     - Also the mongoDB shell is pretty usefull
 
-I used Node v16.14.0 and Angular 16.2.5
+I used Node v16.14.0 and Angular v16.2.5
 
-## To install dependencies
+## Install dependencies
 Run ```$ npm install``` in the MEANunderBoard folder
 
 ## How to run the app
-Run ````$ npm start``` to run the Node.js server. (Backend) This should connect to port [link](http://localhost:3000/)
+Run ```$ npm start``` to run the Node.js server (Backend). This should connect to port [link](http://localhost:3000/)
 (nodemon is used to update any changes on the server if modified)
 
 ### Angular CLI
-```$ ng serve``` to run the angular server. You need to be in the angular-src/src/app folder. (Front-end) This should connect to port [link](http://localhost:4200/)
+```$ ng serve``` to run the angular server. You need to be in the angular-src/src/app folder (Front-end). This should connect to port [link](http://localhost:4200/)
+
+## Additional info
 
 Bootstrap is used for layout.
 
