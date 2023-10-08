@@ -1,0 +1,67 @@
+<div>
+    <h2 class="page-header">Register</h2>
+
+    <div *ngIf="errorMessage" class="alert alert-danger">
+        {{ errorMessage }}
+    </div>
+
+    <div *ngIf="successMessage" class="alert alert-success">
+        {{ successMessage }}
+    </div>
+
+
+    <form (submit)="onRegisterSubmit()">
+        <div class="form-group">
+            <label>Firstname</label>
+            <input type="text" id="first" name="firstname" 
+                class="form-control" [(ngModel)]="firstname" 
+                ngModel name="first" #first="ngModel" required
+                minlength="2" placeholder="Enter firstname">
+        </div>
+
+        <span class="help-block" *ngIf="!first.valid && first.touched">Firstname is required!</span>
+
+        <div class="form-group">
+            <label>Lastname</label>
+            <input type="text" id="last" name="lastname" 
+                class="form-control" [(ngModel)]="lastname" 
+                ngModel name="last" #last="ngModel" required
+                minlength="2" placeholder="Enter lastname">
+        </div>
+
+        <span class="help-block" *ngIf="!last.valid && last.touched">Lastname is required!</span>
+
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="text" [(ngModel)]="phone" 
+                name="phone" class="form-control" 
+                placeholder="Enter phone number">
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" [(ngModel)]="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+        </div>
+
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" id="uname" name="username" 
+                class="form-control" [(ngModel)]="username" 
+                ngModel name="uname" #uname="ngModel" required
+                minlength="2" placeholder="Enter username">
+        </div>
+
+        <span class="help-block" *ngIf="!uname.valid && uname.touched">Last name is required!</span>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" [(ngModel)]="password" 
+                name="password" class="form-control" 
+                placeholder="Enter password">
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Submit">
+
+    </form>
+</div>
+
