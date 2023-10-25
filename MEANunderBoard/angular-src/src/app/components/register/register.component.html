@@ -1,6 +1,8 @@
 <div>
     <h2 class="page-header">Register</h2>
 
+    <h6>As a registered user you may post your own thoughts to the board via username.</h6>
+
     <div *ngIf="errorMessage" class="alert alert-danger">
         {{ errorMessage }}
     </div>
@@ -59,8 +61,9 @@
                 name="password" class="form-control" 
                 placeholder="Enter password">
         </div>
-
-        <input type="submit" class="btn btn-primary" value="Submit">
+        <div class="form-group" style="margin-top: 20px;">
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
 
     </form>
 </div>

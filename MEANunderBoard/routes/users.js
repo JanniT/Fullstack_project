@@ -9,13 +9,13 @@ const User = require('../models/user')
 router.post('/register', async (req, res, next) => {
     try {
         const newUser = new User({
-            firstname: req.body.firstname,
-            lastname: req.body.lastname,
-            phone: req.body.phone,
-            email: req.body.email,
-            username: req.body.username,
-            password: req.body.password
-        });
+          firstname: req.body.firstname,
+          lastname: req.body.lastname,
+          phone: req.body.phone,
+          email: req.body.email,
+          username: req.body.username,
+          password: req.body.password
+        })
 
         await User.addUser(newUser)
 

@@ -25,7 +25,7 @@ export class AuthService {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': this.authToken
-    });
+    })
     return this.http.get('http://localhost:3000/users/profile', { headers }).pipe(map((res: any) => res));
     
   }
@@ -53,5 +53,13 @@ export class AuthService {
     localStorage.clear()
   }
 
-
+  postMessage(messageData: any, serverUrl: string){
+    this.loadToken()
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': this.authToken,
+    });
+    return this.http.post(`${serverUrl}/dashboard`, messageData, { headers })
+    .pipe(map((res: any) => res)
+    )}
 }

@@ -22,6 +22,7 @@ mongoose.connection.on('error', (err) => {
 const app = express()
 
 const users = require('./routes/users')
+const messages = require('./routes/messages') // Import the messages route
 
 // The port used
 const port = 3000
@@ -42,6 +43,9 @@ app.use(passport.initialize())
 require('./config/passport')(passport)
 
 app.use('/users', users)
+
+// Define a route for handling POST requests to /dashboard
+app.use('/dashboard', messages)
 
 // Index route
 app.get('/', (req, res) => {

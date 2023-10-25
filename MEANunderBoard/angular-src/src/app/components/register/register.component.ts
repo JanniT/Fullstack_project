@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ValidateService } from 'src/app/services/validate.service';
-import { AuthService } from 'src/app/services/auth.service';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { ValidateService } from 'src/app/services/validate.service'
+import { AuthService } from 'src/app/services/auth.service'
+import { Router } from '@angular/router'
 
 
 @Component({
@@ -11,14 +11,14 @@ import { Router } from '@angular/router';
 })
 
 export class RegisterComponent implements OnInit {
-  firstname: string = "";
-  lastname: string = "";
-  phone: string = "";
-  email: string ="";
-  username: string = "";
-  password: string = "";
-  errorMessage: string = "";
-  successMessage: string = "";
+  firstname: string = ""
+  lastname: string = ""
+  phone: string = ""
+  email: string =""
+  username: string = ""
+  password: string = ""
+  errorMessage: string = ""
+  successMessage: string = ""
 
   constructor(
     private validateService: ValidateService,

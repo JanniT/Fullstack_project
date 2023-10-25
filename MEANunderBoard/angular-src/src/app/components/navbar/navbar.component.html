@@ -5,7 +5,9 @@
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" [routerLink]="['/']">UnderBoard</a>
+            <a class="navbar-brand" [routerLink]="['/']">
+                <img src="../../../assets/norppa_square.jpg" alt="Logo" class="logo-img">
+                UnderBoard</a>
         </div>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
@@ -15,10 +17,10 @@
             </ul> -->
 
             <ul class="nav navbar-nav navbar-right">
-                <li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']"><a [routerLinkActive]="['active']" [routerLink]="['/dashboard']" class="nav-link">Dashboard</a> </li>
+                <li><a [routerLinkActive]="['active']" [routerLink]="['/dashboard']" class="nav-link">Dashboard</a> </li>
                 <li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']"><a [routerLinkActive]="['active']" [routerLink]="['/profile']" class="nav-link">Profile</a> </li>
 
-
+                <li><a [routerLink]="['/rules']" class="nav-link">Rules</a> </li>
                 <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']"><a [routerLink]="['/register']" class="nav-link">Register</a> </li>
                 <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']"><a [routerLinkActive]="['active']" [routerLink]="['/login']" class="nav-link">Login</a> </li>
                 <li *ngIf="authService.loggedIn()"><a (click)="onLogoutClick()" href="#" class="nav-link">Logout</a> </li>
