@@ -1,0 +1,3 @@
+Link to the demo video of the application: 
+
+[Link] (https://lut-my.sharepoint.com/:v:/g/personal/janni_timoskainen_student_lut_fi/EdeWp1vRLRVEviEe4H0P4vMBpZ-GDZ7dEIihlDIkH-s6dg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&e=eP4mvE)
