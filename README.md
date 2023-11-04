@@ -1,6 +1,7 @@
 # Fullstack_project
 
-This is a project work for a Fullstack course of my studies. It's a MEAN stack application 
+This is a project work for a Fullstack course of my studies. It's a MEAN stack application.
+I have a repository for this courses' exercises, which can be found via this [link](https://github.com/JanniT/Fullstack_course)
 
 ## Prerequisites
 - Angular CLI: ```$ npm i -g @angular(cli)```.
